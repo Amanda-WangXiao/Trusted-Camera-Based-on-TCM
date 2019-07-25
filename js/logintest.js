@@ -1,0 +1,51 @@
+var isconnected = false;
+
+var input = document.getElementById("plain");
+var passwd = document.getElementById("cipher");
+var wsock;
+
+var plainmsg = { "head": "", "record": "", "expand": "" };
+plainmsg["head"] = { "tag": "MESG", "version": 65537 };
+var jsonstr = JSON.stringify(plainmsg);
+
+function mywebsockinit() {
+  if (isconnected) {
+    alert("已连接服务器！")
+    return;
+  }
+  var netaddr = document.getElementById("addr");
+  var netport = document.getElementById("port");
+
+  wsock = new WebSocket('ws://192.168.159.135:12888', 'cube-wsport');
+
+  wsock.onopen = function (e) {
+    if (!isconnected) {
+      isconnected = true;
+      alert("连接成功！")
+    }
+    return;
+  };
+  wsock.onclose = function (e) {
+  };
+  wsock.onerror = function (e) {
+  };
+  wsock.onmessage = function (e) {
+    var msg;
+    msg = e.data;
+    if (msg.replace(/(^s*)|(s*$)/g, "").length != 0) {
+      alert(msg)
+    }
+  }
+}
+
+function myFunction() {
+  if (!isconnected) {
+    alert("连接未建立！")
+    return;
+  }
+
+  var login_info = { user: input.value, passwd: passwd.value };
+  var msg = new Cube_msg("CRYPTO_DEMO", "LOGIN_INFO");
+  msg.addrecord(login_info);
+  wsock.send(msg.output())
+};
