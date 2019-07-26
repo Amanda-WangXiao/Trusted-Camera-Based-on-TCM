@@ -14,24 +14,35 @@
   <div class="container jumbotron">
     <h2>登录</h2>
     <div class="form-group">
-      <label for="exampleInputEmail1">用户名</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <label for="inputUsername">用户名</label>
+      <input type="email" class="form-control" id="inputUsername">
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">密码</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
+      <label for="inputPassword">密码</label>
+      <input type="password" class="form-control" id="inputPassword">
     </div>
-    <div class="form-group form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">记住我</label>
-    </div>
-    <button class="btn btn-primary">登录</button>
+    <button class="btn btn-primary" onclick="login()">登录</button>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="js/master.js"></script>
+  <script>
+    function login () {
+      let username = document.getElementById("inputUsername");
+      let password = document.getElementById("inputPassword");
+      if (username == "" || password == "") {
+        alert("Please fill in username and password");
+      } else {
+        let msg = {
+          username: username,
+          password: password
+        };
+        console.log(JSON.stringify(msg));
+      }
+    }
+  </script>
 </body>
 
 </html>
