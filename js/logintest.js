@@ -1,3 +1,18 @@
+
+function login () {
+  let username = document.getElementById("inputUsername");
+  let password = document.getElementById("inputPassword");
+  if (username == "" || password == "") {
+    alert("Please fill in username and password");
+  } else {
+    let msg = {
+      username: username,
+      password: password
+    };
+    console.log(JSON.stringify(msg));
+  }
+}
+
 var isconnected = false;
 
 var input = document.getElementById("plain");
@@ -13,10 +28,10 @@ function mywebsockinit() {
     alert("已连接服务器！")
     return;
   }
-  var netaddr = document.getElementById("addr");
-  var netport = document.getElementById("port");
+  var netaddr = document.getElementById("inputServer");
+  var netport = document.getElementById("inputPort");
 
-  wsock = new WebSocket('ws://192.168.159.135:12888', 'cube-wsport');
+  wsock = new WebSocket('ws://'+netaddr.value+':'+netport.value, 'cube-wsport');
 
   wsock.onopen = function (e) {
     if (!isconnected) {
