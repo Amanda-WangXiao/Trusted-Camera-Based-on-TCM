@@ -1,18 +1,3 @@
-
-function login() {
-  let username = document.getElementById("inputUsername");
-  let password = document.getElementById("inputPassword");
-  if (username == "" || password == "") {
-    alert("Please fill in username and password");
-  } else {
-    let msg = {
-      username: username,
-      password: password
-    };
-    console.log(JSON.stringify(msg));
-  }
-}
-
 var isconnected = false;
 
 var input = document.getElementById("plain");
@@ -53,14 +38,25 @@ function mywebsockinit() {
   }
 }
 
-function myFunction() {
-  if (!isconnected) {
-    alert("连接未建立！")
-    return;
-  }
+function login() {
+  let username = document.getElementById("inputUsername").value;
+  let password = document.getElementById("inputPassword").value;
+  if (username == "" || password == "") {
+    alert("请输入用户名和密码");
+  } else {
+    let login_info = {
+      user: username,
+      passwd: password
+    };
+    console.log(login_info);
 
-  var login_info = { user: input.value, passwd: passwd.value };
-  var msg = new Cube_msg("CRYPTO_DEMO", "LOGIN_INFO");
-  msg.addrecord(login_info);
-  wsock.send(msg.output())
-};
+    if (!isconnected) {
+      alert("连接未建立！")
+      return;
+    }
+
+    var msg = new Cube_msg("CRYPTO_DEMO", "LOGIN_INFO");
+    msg.addrecord(login_info);
+    wsock.send(msg.output())
+  }
+}

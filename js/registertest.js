@@ -1,22 +1,3 @@
-function register() {
-  let username = document.getElementById("inputUsername");
-  let password = document.getElementById("inputPassword");
-  let passwordValidate = document.getElementById("inputPasswordValidate");
-  let extras = document.getElementById("inputExtras");
-  if (username == "" || password == "" || passwordValidate == "") {
-    alert("Please fill in username and password");
-  } else if (password != passwordValidate) {
-    alert("Password not matching, please check");
-  } else {
-    let msg = {
-      username: username,
-      password: password,
-      extras: extras
-    };
-    console.log(JSON.stringify(msg));
-  }
-}
-
 var isconnected = false;
 
 var input = document.getElementById("plain");
@@ -57,14 +38,30 @@ function mywebsockinit() {
   }
 }
 
-function myFunction() {
-  if (!isconnected) {
-    alert("连接未建立！")
-    return;
-  }
+function register() {
+  let username = document.getElementById("inputUsername").value;
+  let password = document.getElementById("inputPassword").value;
+  let passwordValidate = document.getElementById("inputPasswordValidate").value;
+  let extras = document.getElementById("inputExtras").value;
+  if (username == "" || password == "" || passwordValidate == "") {
+    alert("请输入用户名和密码");
+  } else if (password != passwordValidate) {
+    alert("请输入相同的密码");
+  } else {
+    let register_info = {
+      user: username,
+      passwd: password,
+      user_info: extras
+    };
+    console.log(register_info);
 
-  var login_info = { user: input.value, passwd: passwd.value };
-  var msg = new Cube_msg("CRYPTO_DEMO", "LOGIN_INFO");
-  msg.addrecord(login_info);
-  wsock.send(msg.output())
-};
+    if (!isconnected) {
+      alert("连接未建立！")
+      return;
+    }
+
+    var msg = new Cube_msg("CRYPTO_DEMO", "REG_INFO");
+    msg.addrecord(register_info);
+    wsock.send(msg.output())
+  }
+}
