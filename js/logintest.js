@@ -1,5 +1,5 @@
 
-function login () {
+function login() {
   let username = document.getElementById("inputUsername");
   let password = document.getElementById("inputPassword");
   if (username == "" || password == "") {
@@ -31,7 +31,7 @@ function mywebsockinit() {
   var netaddr = document.getElementById("inputServer");
   var netport = document.getElementById("inputPort");
 
-  wsock = new WebSocket('ws://'+netaddr.value+':'+netport.value, 'cube-wsport');
+  wsock = new WebSocket('ws://' + netaddr.value + ':' + netport.value, 'cube-wsport');
 
   wsock.onopen = function (e) {
     if (!isconnected) {
