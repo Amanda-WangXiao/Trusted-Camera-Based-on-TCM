@@ -60,7 +60,7 @@ function register() {
       return;
     }
 
-    var msg = new Cube_msg("CRYPTO_DEMO", "REG_INFO");
+    var msg = new Cube_msg("LOGIN_TEST", "REGISTER");
     msg.addrecord(register_info);
     wsock.send(msg.output())
   }

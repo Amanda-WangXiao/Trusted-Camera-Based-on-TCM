@@ -55,7 +55,7 @@ function login() {
       return;
     }
 
-    var msg = new Cube_msg("CRYPTO_DEMO", "LOGIN_INFO");
+    var msg = new Cube_msg("LOGIN_TEST", "LOGIN");
     msg.addrecord(login_info);
     wsock.send(msg.output())
   }
