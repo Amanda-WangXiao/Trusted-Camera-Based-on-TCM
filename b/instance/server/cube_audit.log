@@ -1,0 +1,137 @@
+time: 0.0 :read 2 elem from file /home/royan/cube-1.3/proc/main/base_define/namelist.json!
+
+time: 0.001107 :read 4 elem from file /home/royan/cube-1.3/proc/main/base_define/dispatchnamelist.json!
+
+time: 0.001253 :read 1 elem from file /home/royan/cube-1.3/proc/main/base_define/typelist.json!
+
+time: 0.002282 :read 7 elem from file /home/royan/cube-1.3/proc/main/base_define/subtypelist.json!
+
+time: 0.002824 :read 1 elem from file /home/royan/cube-1.3/proc/main/base_define/baseflag.json!
+
+time: 0.003835 :read 3 elem from file /home/royan/cube-1.3/proc/main/base_define/memdb.json!
+
+time: 0.005634 :read 7 elem from file /home/royan/cube-1.3/proc/main/base_define/msghead.json!
+
+time: 0.006646 :read 2 elem from file /home/royan/cube-1.3/proc/main/base_define/msgrecord.json!
+
+time: 0.007677 :read 3 elem from file /home/royan/cube-1.3/proc/main/base_define/expandrecord.json!
+
+time: 0.014161 :read 10 elem from file /home/royan/cube-1.3/proc/main/base_define/base_msg.json!
+
+time: 0.015373 :read 3 elem from file /home/royan/cube-1.3/proc/main/base_define/dispatchrecord.json!
+
+time: 0.017222 :read 2 elem from file /home/royan/cube-1.3/proc/main/base_define/exmoduledefine.json!
+
+time: 0.018007 :read 1 elem from file /home/royan/cube-1.3/proc/main/base_define/sys_conn.json!
+
+time: 0.022688 :read 7 elem from file file_trans.json!
+
+time: 0.029976 :read 10 elem from file login_test.json!
+
+time: 0.031946 :read 5 elem from file tcm_value.json!
+
+time: 0.044111 :read 49 elem from file tcm_general_define.json!
+
+time: 0.077807 :read 107 elem from file tcm_input_define.json!
+
+time: 0.079551 :read 4 elem from file tcm_manage.json!
+
+time: 0.082571 :read 11 elem from file tcm_keydesc.json!
+
+time: 0.084708 :read 6 elem from file tcm_pikdesc.json!
+
+time: 0.091974 :this machine's local uuid is 89e7303aee54fa6ae35b3c104c9495d9a5719839bf34f74ede4d9ed1edb78e1d
+
+time: 0.093110 :read 2 connector!
+
+time: 0.093591 :conn server file_server begin to listen!
+
+time: 0.094044 :conn server pik_receiver begin to listen!
+
+time: 0.094893 :read 6 policy succeed!
+time: 0.095371 :read 1 policy succeed!
+time: 0.096155 :prepare the router proc
+
+time: 0.113383 :prepare the conn proc
+
+time: 0.113468 :monitor ex_modulec router_proc started successfully!
+
+time: 0.113502 :monitor ex_modulec login_test started successfully!
+
+time: 0.113529 :monitor ex_modulec login_store started successfully!
+
+time: 0.113554 :monitor ex_modulec recordlib started successfully!
+
+time: 0.113579 :monitor ex_modulec transfer started successfully!
+
+time: 0.113604 :monitor ex_modulec file_dealer started successfully!
+
+time: 0.113629 :monitor ex_modulec pikcert_verify started successfully!
+
+time: 0.113654 :monitor ex_modulec pikcert_store started successfully!
+
+time: 0.113673 :begin file_dealer start process! 
+
+time: 0.113723 :read 0 lib files!
+
+time: 11.404366 :create a new channel b4000b30!
+
+time: 11.405575 :send 269 data to conn (null)!
+
+time: 11.413671 :channel set name trust_kit!
+
+time: 11.414302 :router get proc connector_proc's message 
+time: 11.414416 :normal message prepare to send: message 463242e type MESSAGE CONN_ACKI to transfer
+time: 27.407354 :create a new channel b4002ee0!
+
+time: 27.407474 :send 269 data to conn (null)!
+
+time: 27.417828 :channel set name client!
+
+time: 27.418552 :router get proc connector_proc's message 
+time: 27.418701 :normal message prepare to send: message ff02abca type MESSAGE CONN_ACKI to transfer
+time: 34.864960 :channel receive (12544 1) message from conn client!
+
+time: 34.864987 :client forward (12544 1) message to main proc!
+
+time: 34.865673 :router get proc connector_proc's message 
+time: 34.865777 :normal message prepare to send: message 1b796fd type LOGIN_TEST REGISTER to login_test
+time: 34.866638 :router get proc login_test's message 
+time: 34.866704 :normal message prepare to send: message bf9ff496 type MESSAGE TYPES to recordlib
+time: 34.866713 :router get proc login_test's message 
+time: 34.867255 :begin to response query message
+time: 34.867309 :normal message prepare to send: message 1b796fd type LOGIN_TEST RETURN to øƒÅM‚¨Ì-ñkyP£2.nÆ«¿Ô}~{á§Slogin
+time: 34.867326 :send message to conn process!
+time: 34.867969 :recordlib begin proc store
+
+time: 34.872763 :send 202 data to conn client!
+
+time: 34.872783 :send (12544  6)message 202 to conn client!
+
+time: 39.776921 :channel receive (12544 2) message from conn client!
+
+time: 39.776945 :client forward (12544 2) message to main proc!
+
+time: 39.777591 :router get proc connector_proc's message 
+time: 39.777778 :duplicate message prepare to send: message 1e889d26 type LOGIN_TEST LOGIN to transfer
+time: 39.777848 :normal message prepare to send: message 1e889d26 type LOGIN_TEST LOGIN to login_test
+time: 39.778823 :router get proc login_test's message 
+time: 39.779329 :begin to response query message
+time: 39.779382 :normal message prepare to send: message 1e889d26 type LOGIN_TEST RETURN to øƒÅM‚¨Ì-ñkyP£2.nÆ«¿Ô}~{á§Slogin
+time: 39.779390 :send message to conn process!
+time: 39.784785 :send 200 data to conn client!
+
+time: 39.784807 :send (12544  6)message 200 to conn client!
+
+time: 39.450211 :channel receive (13088 4) message from conn trust_kit!
+
+time: 39.450240 :client forward (13088 4) message to main proc!
+
+time: 39.450935 :router get proc connector_proc's message 
+time: 39.451096 :normal message prepare to send: message 90c3f5ec type TCM_PIK_DESC PIKCERT to pikcert_verify
+time: 40.630570 :router get proc pikcert_verify's message 
+time: 40.632700 :normal message prepare to send: message 90c3f5ec type TCM_PIK_DESC PIKCERT to pikcert_store
+time: 40.637933 :router get proc pikcert_store's message 
+time: 40.639424 :normal message prepare to send: message 564d223f type MESSAGE TYPES to recordlib
+time: 40.640185 :recordlib begin proc store
+

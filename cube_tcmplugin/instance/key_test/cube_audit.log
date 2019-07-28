@@ -1,0 +1,73 @@
+time: 0.0 :read 2 elem from file /home/royan/cube-1.3/proc/main/base_define/namelist.json!
+
+time: 0.000271 :read 4 elem from file /home/royan/cube-1.3/proc/main/base_define/dispatchnamelist.json!
+
+time: 0.000698 :read 1 elem from file /home/royan/cube-1.3/proc/main/base_define/typelist.json!
+
+time: 0.001506 :read 7 elem from file /home/royan/cube-1.3/proc/main/base_define/subtypelist.json!
+
+time: 0.001606 :read 1 elem from file /home/royan/cube-1.3/proc/main/base_define/baseflag.json!
+
+time: 0.002290 :read 3 elem from file /home/royan/cube-1.3/proc/main/base_define/memdb.json!
+
+time: 0.004514 :read 7 elem from file /home/royan/cube-1.3/proc/main/base_define/msghead.json!
+
+time: 0.005085 :read 2 elem from file /home/royan/cube-1.3/proc/main/base_define/msgrecord.json!
+
+time: 0.005674 :read 3 elem from file /home/royan/cube-1.3/proc/main/base_define/expandrecord.json!
+
+time: 0.007170 :read 10 elem from file /home/royan/cube-1.3/proc/main/base_define/base_msg.json!
+
+time: 0.007773 :read 3 elem from file /home/royan/cube-1.3/proc/main/base_define/dispatchrecord.json!
+
+time: 0.008121 :read 2 elem from file /home/royan/cube-1.3/proc/main/base_define/exmoduledefine.json!
+
+time: 0.008440 :read 1 elem from file /home/royan/cube-1.3/proc/main/base_define/sys_conn.json!
+
+time: 0.019095 :read 5 elem from file tcm_value.json!
+
+time: 0.045434 :read 49 elem from file tcm_general_define.json!
+
+time: 0.081397 :read 107 elem from file tcm_input_define.json!
+
+time: 0.082376 :read 4 elem from file tcm_manage.json!
+
+time: 0.089025 :this machine's local uuid is 89e7303aee54fa6ae35b3c104c9495d9a5719839bf34f74ede4d9ed1edb78e1d
+
+time: 0.089841 :read 2 policy succeed!
+time: 0.089887 :prepare the router proc
+
+time: 0.101459 :prepare the conn proc
+
+time: 0.101585 :monitor ex_modulec router_proc started successfully!
+
+time: 0.101625 :start ex_module msg_send started successfully!
+
+time: 0.102305 :monitor ex_modulec create_key started successfully!
+
+time: 0.102335 :monitor ex_modulec recordlib started successfully!
+
+time: 0.102401 :read 0 lib files!
+
+time: 0.102421 :begin msgfile_send module!
+
+time: 0.103789 :router get proc msg_send's message 
+time: 0.103934 :normal message prepare to send: message 79dc5295 type TCM_KEY_MANAGE PRIVATE_KEY to create_key
+time: 0.105536 :write 80 data!
+
+time: 0.109007 :read 82 data!
+
+time: 0.111512 :write 153 data!
+
+time: 0.193879 :read 305 data!
+
+time: 0.245353 :write 46 data!
+
+time: 0.248895 :read 10 data!
+
+time: 0.249510 :router get proc create_key's message 
+time: 0.249598 :normal message prepare to send: message 57419dd5 type MESSAGE TYPES to recordlib
+time: 0.249608 :router get proc create_key's message 
+time: 0.249661 :discard message: message 79dc5295 type TCM_KEY_MANAGE PRIVATE_KEY to 
+time: 0.254895 :recordlib begin proc store
+

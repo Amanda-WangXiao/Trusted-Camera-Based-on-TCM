@@ -1,0 +1,235 @@
+{
+	"head":
+	{
+		"name":"dtype_tcm_keydesc",
+		"type":"TYPELIST"
+	},
+	"record":
+	{
+		"elem_no":2,
+		"elemlist":
+		[
+			"TCM_KEY_DESC=0x3300",
+			"TCM_ENTITY_DESC=0x3310"
+		]
+	}
+}
+{
+	"head":
+	{
+		"name":"subtype_tcm_key_desc",
+		"type":"SUBTYPELIST"
+	},
+	"record":
+	{
+		"type":"TCM_KEY_DESC",
+		"elem_no":9,
+		"elemlist":
+		[
+			"EK_DESC=0x01",
+			"PIK_DESC",
+			"VERIFY_DESC",
+			"LOCAL_KEYSET",
+			"REMOTE_KEYSET",
+			"KEYCERT_DESC",
+			"QUOTE_DESC",
+			"SIGNKEY_DESC",
+			"BINDKEY_DESC"
+		]
+	}
+}
+{
+	"head":
+	{
+		"name":"subtype_tcm_entity_desc",
+		"type":"SUBTYPELIST"
+	},
+	"record":
+	{
+		"type":"TCM_ENTITY_DESC",
+		"elem_no":4,
+		"elemlist":
+		[
+			"USER_DESC",
+			"NODE_DESC",
+			"PIK_REQUEST_DESC",
+			"PIK_CERT_DESC"
+		]
+	}
+}
+{
+	"head":
+	{
+		"name":"tcm_key_desc_ek_desc",
+		"type":"RECORDTYPE"
+	},
+	"record":
+	{
+		"type":"TCM_KEY_DESC",
+		"subtype":"EK_DESC",
+		"struct_desc":
+		{
+			"elem_desc":
+			[
+				{"name":"uuid","type":"UUID"},
+				{"name":"node_uuid","type":"UUID"},
+				{"name":"node_name","type":"STRING","size":32}
+			]
+		}
+	}
+}
+{
+	"head":
+	{
+		"name":"tcm_key_desc_pik_desc",
+		"type":"RECORDTYPE"
+	},
+	"record":
+	{
+		"type":"TCM_KEY_DESC",
+		"subtype":"PIK_DESC",
+		"struct_desc":
+		{
+			"elem_desc":
+			[
+				{"name":"uuid","type":"UUID"},
+				{"name":"node_uuid","type":"UUID"},
+				{"name":"user_name","type":"STRING","size":32},
+				{"name":"cert_uuid","type":"UUID"}
+			]
+		}
+	}
+}
+{
+	"head":
+	{
+		"name":"tcm_key_desc_verify_desc",
+		"type":"RECORDTYPE"
+	},
+	"record":
+	{
+		"type":"TCM_KEY_DESC",
+		"subtype":"VERIFY_DESC",
+		"struct_desc":
+		{
+			"elem_desc":
+			[
+				{"name":"result","type":"INT"},
+				{"name":"object_uuid","type":"UUID"},
+				{"name":"verifykey_uuid","type":"UUID"}
+			]
+		}
+	}
+}
+{
+	"head":
+	{
+		"name":"tcm_key_desc_local_keyset",
+		"type":"RECORDTYPE"
+	},
+	"record":
+	{
+		"type":"TCM_KEY_DESC",
+		"subtype":"LOCAL_KEYSET",
+		"struct_desc":
+		{
+			"elem_desc":
+			[
+				{"name":"user_name","type":"STRING","size":32},
+				{"name":"pik_uuid","type":"UUID"},
+				{"name":"pikcert_uuid","type":"UUID"},
+				{"name":"signkey_uuid","type":"UUID"},
+				{"name":"unbindkey_uuid","type":"UUID"}
+			]
+		}
+	}
+}
+{
+	"head":
+	{
+		"name":"tcm_key_desc_remote_keyset",
+		"type":"RECORDTYPE"
+	},
+	"record":
+	{
+		"type":"TCM_KEY_DESC",
+		"subtype":"REMOTE_KEYSET",
+		"struct_desc":
+		{
+			"elem_desc":
+			[
+				{"name":"user_name","type":"STRING","size":32},
+				{"name":"node_uuid","type":"UUID"},
+				{"name":"pikpub_uuid","type":"UUID"},
+				{"name":"pikcert_uuid","type":"UUID"},
+				{"name":"verifykey_uuid","type":"UUID"},
+				{"name":"bindkey_uuid","type":"UUID"}
+			]
+		}
+	}
+}
+{
+	"head":
+	{
+		"name":"tcm_key_desc_keycert_desc",
+		"type":"RECORDTYPE"
+	},
+	"record":
+	{
+		"type":"TCM_KEY_DESC",
+		"subtype":"KEYCERT_DESC",
+		"struct_desc":
+		{
+			"elem_desc":
+			[
+				{"name":"uuid","type":"UUID"},
+				{"name":"node_uuid","type":"UUID"},
+				{"name":"pikpub_uuid","type":"UUID"},
+				{"name":"key_uuid","type":"UUID"},
+				{"name":"external_data","type":"BINDATA","size":32}
+			]
+		}
+	}
+}
+{
+	"head":
+	{
+		"name":"tcm_key_desc_quote_desc",
+		"type":"RECORDTYPE"
+	},
+	"record":
+	{
+		"type":"TCM_KEY_DESC",
+		"subtype":"QUOTE_DESC",
+		"struct_desc":
+		{
+			"elem_desc":
+			[
+				{"name":"uuid","type":"UUID"},
+				{"name":"node_uuid","type":"UUID"},
+				{"name":"pikpub_uuid","type":"UUID"},
+				{"name":"pcr_select","type":"SUBSTRUCT","ref_name":"tcm_pcr_selection"},
+				{"name":"external_data","type":"BINDATA","size":32}
+			]
+		}
+	}
+}
+{
+	"head":
+	{
+		"name":"tcm_entity_desc_user_desc",
+		"type":"RECORDTYPE"
+	},
+	"record":
+	{
+		"type":"TCM_ENTITY_DESC",
+		"subtype":"USER_DESC",
+		"struct_desc":
+		{
+			"elem_desc":
+			[
+				{"name":"user_name","type":"STRING","size":32},
+			]
+		}
+	}
+}

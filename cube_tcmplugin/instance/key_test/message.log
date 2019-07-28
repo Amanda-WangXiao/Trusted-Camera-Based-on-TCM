@@ -1,0 +1,11 @@
+
+**************Begin new trust node proc****************************
+{ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"msg_send","receiver_uuid":"create_key","route":"login","flow":"DELIVER","state":"INIT","flag":"LOCAL","ljump":1,"rjump":1,"record_type":"TCM_KEY_MANAGE","record_subtype":"PRIVATE_KEY","record_num":1,"record_size":0,"expand_num":0,"expand_size":0,"msg_uuid":"9552dc794b708ff8dd5d6141c47c8baa003dd47d2aef4cee3fc7bbfa85cd2b14"},"RECORD":[{"uuid":"","vtcm_uuid":"","issmkwrapped":1,"key_usage":"TCM_SM2KEY_STORAGE","key_flags":"TCM_ISVOLATILE|TCM_PCRIGNOREDONREAD","pcrinfo_uuid":"","wrapkey_uuid":"","pubkey_uuid":""}],"EXPAND" :[]}
+
+************************************************************
+{ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"create_key","receiver_uuid":"recordlib","route":"keystore","flow":"DELIVER","state":"INIT","flag":"LOCAL","ljump":1,"rjump":1,"record_type":"MESSAGE","record_subtype":"TYPES","record_num":2,"record_size":0,"expand_num":0,"expand_size":0,"msg_uuid":"d59d4157d064c4af48a520112265aa9fa3d2e93168722621dc55ae07d21a5f4e"},"RECORD":[{"type":"TCM_KEY_MANAGE","subtype":"PRIVATE_KEY"},{"type":"TCM_KEY_MANAGE","subtype":"PUBLIC_KEY"}],"EXPAND" :[]}
+
+************************************************************
+{ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"create_key","receiver_uuid":"","route":"login","flow":"FINISH","state":"INIT","flag":"NULL","ljump":2,"rjump":1,"record_type":"TCM_KEY_MANAGE","record_subtype":"PRIVATE_KEY","record_num":1,"record_size":0,"expand_num":0,"expand_size":0,"msg_uuid":"9552dc794b708ff8dd5d6141c47c8baa003dd47d2aef4cee3fc7bbfa85cd2b14"},"RECORD":[{"uuid":"71a44d1926b673d500fb83b998b4a5c7d3371fa47f93cf8779373f795e29a0b4","vtcm_uuid":"89e7303aee54fa6ae35b3c104c9495d9a5719839bf34f74ede4d9ed1edb78e1d","issmkwrapped":1,"key_usage":"TCM_SM2KEY_STORAGE","key_flags":"TCM_ISVOLATILE|TCM_PCRIGNOREDONREAD","pcrinfo_uuid":"","wrapkey_uuid":"","pubkey_uuid":"b18a836ab38d4a77d58819f4471e8385df0edae6d672530579931aae6531c85f"}],"EXPAND" :[]}
+
+************************************************************

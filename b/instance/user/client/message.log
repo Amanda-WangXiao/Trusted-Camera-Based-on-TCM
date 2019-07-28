@@ -1,0 +1,5 @@
+
+**************Begin new trust node proc****************************
+{ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"login_client","receiver_uuid":"term_io","route":"trigger","flow":"DELIVER","state":"INIT","flag":"LOCAL","ljump":1,"rjump":1,"record_type":"MESSAGE","record_subtype":"BASE_MSG","record_num":1,"record_size":0,"expand_num":0,"expand_size":0,"msg_uuid":"ddd97bc233a701928fabf0a04504e49bbc5ab7244eb49c6f8cc8648f2955f0b6"},"RECORD":[{"message":"choose option: register,login, sendkey, sendfile or log out"}],"EXPAND" :[]}
+
+************************************************************

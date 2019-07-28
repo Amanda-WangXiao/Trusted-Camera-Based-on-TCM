@@ -1,0 +1,10 @@
+{
+	"type":"LOGIN_TEST",
+	"subtype":"REGISTER",
+	"mode":"INT"
+}
+{
+	"user_name":"teacher",
+	"passwd":"123456",
+	"user_info":"only for test!"
+}

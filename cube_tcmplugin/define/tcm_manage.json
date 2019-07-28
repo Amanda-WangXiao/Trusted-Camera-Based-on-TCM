@@ -1,0 +1,83 @@
+{
+	"head":
+	{
+		"name":"dtype_tcm_manage",
+		"type":"TYPELIST"
+	},
+	"record":
+	{
+		"elem_no":1,
+		"elemlist":
+		[
+			"TCM_KEY_MANAGE=0x3200",
+		]
+	}
+}
+{
+	"head":
+	{
+		"name":"subtype_login_test",
+		"type":"SUBTYPELIST"
+	},
+	"record":
+	{
+		"type":"TCM_KEY_MANAGE",
+		"elem_no":2,
+		"elemlist":
+		[
+			"PRIVATE_KEY=0x01",
+			"PUBLIC_KEY"
+		]
+	}
+}
+{
+	"head":
+	{
+		"name":"tcm_manage_private_key",
+		"type":"RECORDTYPE"
+	},
+	"record":
+	{
+		"type":"TCM_KEY_MANAGE",
+		"subtype":"PRIVATE_KEY",
+		"struct_desc":
+		{
+			"elem_desc":
+			[
+				{"name":"uuid","type":"UUID"},
+				{"name":"vtcm_uuid","type":"UUID"},
+				{"name":"issmkwrapped","type":"UCHAR"},
+				{"name":"key_usage","type":"ENUM","ref_name":"tcm_key_usage_value"},
+				{"name":"key_flags","type":"FLAG","ref_name":"tcm_key_flags_value"},
+				{"name":"pcrinfo_uuid","type":"UUID"},
+				{"name":"wrapkey_uuid","type":"UUID"},
+				{"name":"pubkey_uuid","type":"UUID"}
+			]
+		}
+	}
+}
+{
+	"head":
+	{
+		"name":"tcm_manage_public_key",
+		"type":"RECORDTYPE"
+	},
+	"record":
+	{
+		"type":"TCM_KEY_MANAGE",
+		"subtype":"PUBLIC_KEY",
+		"struct_desc":
+		{
+			"elem_desc":
+			[
+				{"name":"uuid","type":"UUID"},
+				{"name":"vtcm_uuid","type":"UUID"},
+				{"name":"ispubek","type":"UCHAR"},
+				{"name":"key_usage","type":"ENUM","ref_name":"tcm_key_usage_value"},
+				{"name":"key_flags","type":"FLAG","ref_name":"tcm_key_flags_value"},
+				{"name":"pcrinfo_uuid","type":"UUID"},
+				{"name":"prikey_uuid","type":"UUID"}
+			]
+		}
+	}
+}

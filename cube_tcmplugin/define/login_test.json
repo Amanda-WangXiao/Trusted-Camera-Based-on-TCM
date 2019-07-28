@@ -1,0 +1,161 @@
+{
+	"head":
+	{
+		"name":"dtype_login_test",
+		"type":"TYPELIST"
+	},
+	"record":
+	{
+		"elem_no":1,
+		"elemlist":
+		[
+			"LOGIN_TEST=0x3100"
+		]
+	}
+}
+{
+	"head":
+	{
+		"name":"subtype_login_test",
+		"type":"SUBTYPELIST"
+	},
+	"record":
+	{
+		"type":"LOGIN_TEST",
+		"elem_no":4,
+		"elemlist":
+		[
+			"REGISTER=0x01",
+			"LOGIN",
+			"STATE",
+			"RETURN"
+		]
+	}
+}
+{
+	"head":
+	{
+		"name":"enum_login_state",
+		"type":"NAMELIST"
+	},
+	"record":
+	{
+		"elem_no":3,
+		"elemlist":
+		[
+			"LOGIN_STATE_WAIT",
+			"LOGIN_STATE_LOGIN",
+			"LOGIN_STATE_ERR"
+		]
+	}
+}
+{
+	"head":
+	{
+		"name":"enum_login_return",
+		"type":"NAMELIST"
+	},
+	"record":
+	{
+		"elem_no":5,
+		"elemlist":
+		[
+			"LOGIN_RETURN_SUCCEED",
+			"LOGIN_RETURN_HASUSER",
+			"LOGIN_RETURN_INVALID",
+			"LOGIN_RETURN_NOUSER",
+			"LOGIN_RETURN_AUTHFAIL"
+		]
+	}
+}
+{
+	"head":
+	{
+		"name":"login_test_register",
+		"type":"RECORDTYPE"
+	},
+	"record":
+	{
+		"type":"LOGIN_TEST",
+		"subtype":"REGISTER",
+		"struct_desc":
+		{
+			"elem_desc":
+			[
+				{"name":"user_name","type":"ESTRING","size":32},
+				{"name":"passwd","type":"STRING","size":32},
+				{"name":"user_info","type":"ESTRING","size":512},
+				{"name":"nonce","type":"BINDATA","size":32},
+			]
+		}
+	}
+}
+{
+	"head":
+	{
+		"name":"login_test_login",
+		"type":"RECORDTYPE"
+	},
+	"record":
+	{
+		"type":"LOGIN_TEST",
+		"subtype":"LOGIN",
+		"struct_desc":
+		{
+			"elem_desc":
+			[
+				{"name":"user_name","type":"ESTRING","size":32},
+				{"name":"passwd","type":"STRING","size":32},
+				{"name":"machine_uuid","type":"UUID"}
+			]
+		}
+	}
+}
+{
+	"head":
+	{
+		"name":"login_test_state",
+		"type":"RECORDTYPE"
+	},
+	"record":
+	{
+		"type":"LOGIN_TEST",
+		"subtype":"STATE",
+		"struct_desc":
+		{
+			"elem_desc":
+			[
+				{"name":"user_name","type":"ESTRING","size":32},
+				{"name":"node_uuid","type":"UUID"},
+				{"name":"curr_state","type":"ENUM","ref_name":"enum_login_state"},
+				{"name":"user_info","type":"ESTRING","size":512},
+			]
+		}
+		"index":
+                {
+                        "flag":"INDEX",
+                        "elemlist":"user_name"
+                }
+
+	}
+}
+{
+	"head":
+	{
+		"name":"login_test_return",
+		"type":"RECORDTYPE"
+	},
+	"record":
+	{
+		"type":"LOGIN_TEST",
+		"subtype":"RETURN",
+		"struct_desc":
+		{
+			"elem_desc":
+			[
+				{"name":"return_code","type":"ENUM","ref_name":"enum_login_return"},
+				{"name":"return_info","type":"ESTRING","size":128}
+			]
+		}
+	}
+}

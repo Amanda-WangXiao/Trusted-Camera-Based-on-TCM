@@ -1,0 +1,66 @@
+time: 0.0 :read 2 elem from file /home/royan/cube-1.3/proc/main/base_define/namelist.json!
+
+time: 0.000278 :read 4 elem from file /home/royan/cube-1.3/proc/main/base_define/dispatchnamelist.json!
+
+time: 0.000410 :read 1 elem from file /home/royan/cube-1.3/proc/main/base_define/typelist.json!
+
+time: 0.002097 :read 7 elem from file /home/royan/cube-1.3/proc/main/base_define/subtypelist.json!
+
+time: 0.003745 :read 1 elem from file /home/royan/cube-1.3/proc/main/base_define/baseflag.json!
+
+time: 0.004307 :read 3 elem from file /home/royan/cube-1.3/proc/main/base_define/memdb.json!
+
+time: 0.006263 :read 7 elem from file /home/royan/cube-1.3/proc/main/base_define/msghead.json!
+
+time: 0.009574 :read 2 elem from file /home/royan/cube-1.3/proc/main/base_define/msgrecord.json!
+
+time: 0.010859 :read 3 elem from file /home/royan/cube-1.3/proc/main/base_define/expandrecord.json!
+
+time: 0.012855 :read 10 elem from file /home/royan/cube-1.3/proc/main/base_define/base_msg.json!
+
+time: 0.016280 :read 3 elem from file /home/royan/cube-1.3/proc/main/base_define/dispatchrecord.json!
+
+time: 0.017324 :read 2 elem from file /home/royan/cube-1.3/proc/main/base_define/exmoduledefine.json!
+
+time: 0.018191 :read 1 elem from file /home/royan/cube-1.3/proc/main/base_define/sys_conn.json!
+
+time: 0.029107 :read 7 elem from file file_trans.json!
+
+time: 0.036171 :read 10 elem from file login_test.json!
+
+time: 0.045369 :this machine's local uuid is 89e7303aee54fa6ae35b3c104c9495d9a5719839bf34f74ede4d9ed1edb78e1d
+
+time: 0.047531 :read 3 connector!
+
+time: 0.048611 :conn server register begin to listen!
+
+time: 0.049603 :read 5 policy succeed!
+time: 0.050279 :read 3 policy succeed!
+time: 0.051063 :prepare the router proc
+
+time: 0.070213 :prepare the conn proc
+
+time: 0.071030 :monitor ex_modulec router_proc started successfully!
+
+time: 0.071716 :start ex_module term_io started successfully!
+
+time: 0.072290 :start ex_module msg_send started successfully!
+
+time: 0.072905 :monitor ex_modulec login_client started successfully!
+
+time: 0.072942 :monitor ex_modulec file_dealer started successfully!
+
+time: 0.072964 :begin file_dealer start process! 
+
+time: 0.073947 :begin msgfile_send module!
+
+time: 0.073972 :begin term_io term_io!
+
+time: 0.074564 :router get proc login_client's message 
+time: 0.075263 :normal message prepare to send: message c27bd9dd type MESSAGE BASE_MSG to term_io
+time: 0.076360 :begin proc term_io start
+
+time: 12.995071 :create a new channel e8b234b0!
+
+time: 12.995235 :send 269 data to conn (null)!
+

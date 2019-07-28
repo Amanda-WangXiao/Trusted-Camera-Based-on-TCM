@@ -1,0 +1,240 @@
+time: 0.0 :read 2 elem from file /home/royan/cube-1.3/proc/main/base_define/namelist.json!
+
+time: 0.000254 :read 4 elem from file /home/royan/cube-1.3/proc/main/base_define/dispatchnamelist.json!
+
+time: 0.000386 :read 1 elem from file /home/royan/cube-1.3/proc/main/base_define/typelist.json!
+
+time: 0.000911 :read 7 elem from file /home/royan/cube-1.3/proc/main/base_define/subtypelist.json!
+
+time: 0.001017 :read 1 elem from file /home/royan/cube-1.3/proc/main/base_define/baseflag.json!
+
+time: 0.001497 :read 3 elem from file /home/royan/cube-1.3/proc/main/base_define/memdb.json!
+
+time: 0.003283 :read 7 elem from file /home/royan/cube-1.3/proc/main/base_define/msghead.json!
+
+time: 0.003869 :read 2 elem from file /home/royan/cube-1.3/proc/main/base_define/msgrecord.json!
+
+time: 0.004615 :read 3 elem from file /home/royan/cube-1.3/proc/main/base_define/expandrecord.json!
+
+time: 0.006148 :read 10 elem from file /home/royan/cube-1.3/proc/main/base_define/base_msg.json!
+
+time: 0.006775 :read 3 elem from file /home/royan/cube-1.3/proc/main/base_define/dispatchrecord.json!
+
+time: 0.007150 :read 2 elem from file /home/royan/cube-1.3/proc/main/base_define/exmoduledefine.json!
+
+time: 0.007377 :read 1 elem from file /home/royan/cube-1.3/proc/main/base_define/sys_conn.json!
+
+time: 0.011989 :read 7 elem from file file_trans.json!
+
+time: 0.017684 :read 10 elem from file login_test.json!
+
+time: 0.018481 :read 5 elem from file tcm_value.json!
+
+time: 0.030454 :read 49 elem from file tcm_general_define.json!
+
+time: 0.068906 :read 107 elem from file tcm_input_define.json!
+
+time: 0.070109 :read 4 elem from file tcm_manage.json!
+
+time: 0.072661 :read 11 elem from file tcm_keydesc.json!
+
+time: 0.074276 :read 6 elem from file tcm_pikdesc.json!
+
+time: 0.081444 :this machine's local uuid is 89e7303aee54fa6ae35b3c104c9495d9a5719839bf34f74ede4d9ed1edb78e1d
+
+time: 0.086986 :read 3 connector!
+
+time: 0.087005 :conn server crypt_server begin to listen!
+
+time: 0.087607 :read 9 policy succeed!
+time: 0.087713 :read 3 policy succeed!
+time: 0.087734 :prepare the router proc
+
+time: 0.108148 :prepare the conn proc
+
+time: 0.108424 :monitor ex_modulec router_proc started successfully!
+
+time: 0.108464 :monitor ex_modulec pik_client started successfully!
+
+time: 0.108489 :monitor ex_modulec pikcert_verify started successfully!
+
+time: 0.108516 :monitor ex_modulec key_check started successfully!
+
+time: 0.108540 :monitor ex_modulec key_manage started successfully!
+
+time: 0.108565 :monitor ex_modulec pikcert_store started successfully!
+
+time: 0.108594 :monitor ex_modulec localkey_gen started successfully!
+
+time: 0.108629 :monitor ex_modulec recordlib started successfully!
+
+time: 0.108662 :monitor ex_modulec create_key started successfully!
+
+time: 0.108849 :monitor ex_modulec remotekey_gen started successfully!
+
+time: 0.108884 :monitor ex_modulec remotekey_send started successfully!
+
+time: 0.108908 :monitor ex_modulec msgrecord_store started successfully!
+
+time: 0.108932 :monitor ex_modulec file_dealer started successfully!
+
+time: 0.108954 :monitor ex_modulec uuid_symm_crypt started successfully!
+
+time: 0.108981 :monitor ex_modulec sessionkey_switch started successfully!
+
+time: 0.109056 :read 0 lib files!
+
+time: 0.109271 :begin file_dealer start process! 
+
+time: 0.112442 :proc conn client receive 272 data!
+
+time: 0.112944 :send 337 data to conn pik_client!
+
+time: 0.112956 :client pik_client send 337 ack data to server !
+
+time: 0.113307 :router get proc connector_proc's message 
+time: 0.113397 :discard message: message b6f089c0 type MESSAGE CONN_SYNI to 
+time: 0.118000 :proc conn client receive 269 data!
+
+time: 0.118312 :send 334 data to conn pik_sender!
+
+time: 0.118325 :client pik_sender send 334 ack data to server !
+
+time: 0.118495 :router get proc connector_proc's message 
+time: 0.118565 :discard message: message 463242e type MESSAGE CONN_SYNI to 
+time: 16.112078 :create a new channel 580034a0!
+
+time: 16.112206 :send 272 data to conn (null)!
+
+time: 16.114504 :channel set name client!
+
+time: 16.115034 :router get proc connector_proc's message 
+time: 16.115112 :discard message: message 2a7c2478 type MESSAGE CONN_ACKI to 
+time: 23.555154 :channel receive (12544 1) message from conn client!
+
+time: 23.555342 :client forward (12544 1) message to main proc!
+
+time: 23.555532 :router get proc connector_proc's message 
+time: 23.555651 :aspect message prepare to send message 1b796fd type LOGIN_TEST REGISTER to key_manage
+time: 23.556287 :router get proc key_manage's message 
+time: 23.557485 :begin to response aspect message
+time: 23.557574 :aspect message prepare to send message 1b796fd type LOGIN_TEST REGISTER to øƒÅM‚¨Ì-ñkyP£2.nÆ«¿Ô}~{á§Strust
+time: 23.557581 :send message to conn process!
+time: 23.561996 :send 428 data to conn client!
+
+time: 23.562011 :send (12544  1)message 428 to conn client!
+
+time: 23.586582 :channel receive (12544 6) message from conn client!
+
+time: 23.586600 :client forward (12544 6) message to main proc!
+
+time: 23.586771 :router get proc connector_proc's message 
+time: 23.586866 :aspect message prepare to send message 1b796fd type LOGIN_TEST RETURN to key_manage
+time: 28.465967 :channel receive (12544 2) message from conn client!
+
+time: 28.465986 :client forward (12544 2) message to main proc!
+
+time: 28.466184 :router get proc connector_proc's message 
+time: 28.466469 :aspect message prepare to send message 1e889d26 type LOGIN_TEST LOGIN to key_manage
+time: 28.466922 :router get proc key_manage's message 
+time: 28.468125 :begin to response aspect message
+time: 28.468201 :aspect message prepare to send message 1e889d26 type LOGIN_TEST LOGIN to øƒÅM‚¨Ì-ñkyP£2.nÆ«¿Ô}~{á§Strust
+time: 28.468208 :send message to conn process!
+time: 28.474011 :send 456 data to conn client!
+
+time: 28.474031 :send (12544  2)message 456 to conn client!
+
+time: 28.498450 :channel receive (12544 6) message from conn client!
+
+time: 28.498469 :client forward (12544 6) message to main proc!
+
+time: 28.498663 :router get proc connector_proc's message 
+time: 28.498770 :aspect message prepare to send message 1e889d26 type LOGIN_TEST RETURN to key_manage
+time: 28.499368 :router get proc key_manage's message 
+time: 28.499426 :normal message prepare to send: message 17be3e2a type MESSAGE INSTANCE_INFO to key_check
+time: 28.499433 :router get proc key_manage's message 
+time: 28.500870 :begin to response aspect message
+time: 28.500935 :aspect message prepare to send message 1e889d26 type LOGIN_TEST RETURN to øƒÅM‚¨Ì-ñkyP£2.nÆ«¿Ô}~{á§Strust
+time: 28.500942 :send message to conn process!
+time: 28.501189 :router get proc key_check's message 
+time: 28.501243 :discard message: message 17be3e2a type MESSAGE INSTANCE_INFO to 
+time: 28.501249 :router get proc key_check's message 
+time: 28.501291 :normal message prepare to send: message 90c3f5ec type TCM_PIK_DESC USERINFO to pik_client
+time: 28.502417 :write 80 data!
+
+time: 28.504571 :read 82 data!
+
+time: 28.506609 :write 80 data!
+
+time: 28.506745 :send 328 data to conn client!
+
+time: 28.506755 :send (12544  6)message 328 to conn client!
+
+time: 28.508899 :read 82 data!
+
+time: 28.511741 :write 185 data!
+
+time: 28.755787 :read 405 data!
+
+time: 28.756276 :write 46 data!
+
+time: 28.760668 :read 10 data!
+
+time: 28.760826 :write 46 data!
+
+time: 28.766498 :read 10 data!
+
+time: 28.767227 :router get proc pik_client's message 
+time: 28.767619 :normal message prepare to send: message 90c3f5ec type TCM_PIK_DESC USERINFO to ca_center
+time: 28.767626 :send message to conn process!
+time: 28.773537 :send 535 data to conn pik_client!
+
+time: 28.773572 :send (13088  1)message 535 to conn pik_client!
+
+time: 28.968545 :proc conn client receive 549 data!
+
+time: 28.968736 :router get proc connector_proc's message 
+time: 28.968818 :normal message prepare to send: message 90c3f5ec type TCM_PIK_DESC CADATA to pik_client
+time: 28.969268 :write 80 data!
+
+time: 28.971411 :read 82 data!
+
+time: 28.975126 :write 313 data!
+
+time: 28.978402 :read 46 data!
+
+time: 28.979365 :write 46 data!
+
+time: 28.983838 :read 10 data!
+
+time: 28.984059 :write 80 data!
+
+time: 28.992256 :read 82 data!
+
+time: 28.992698 :write 80 data!
+
+time: 28.998315 :read 82 data!
+
+time: 28.998889 :write 243 data!
+
+time: 28.117849 :read 98 data!
+
+time: 28.118200 :write 46 data!
+
+time: 28.141037 :read 10 data!
+
+time: 28.141280 :write 46 data!
+
+time: 28.148190 :read 10 data!
+
+time: 28.148417 :write 14 data!
+
+time: 28.154446 :read 10 data!
+
+time: 28.154841 :router get proc pik_client's message 
+time: 28.154963 :normal message prepare to send: message 90c3f5ec type TCM_PIK_DESC PIKCERT to :pik_sender
+time: 28.154971 :send message to conn process!
+time: 28.155072 :send 576 data to conn pik_sender!
+
+time: 28.155083 :send (13088  4)message 576 to conn pik_sender!
+

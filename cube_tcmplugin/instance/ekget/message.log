@@ -1,0 +1,8 @@
+
+**************Begin new trust node proc****************************
+{ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"connector_proc","receiver_uuid":"","route":"","flow":"FINISH","state":"INIT","flag":"NULL","ljump":1,"rjump":1,"record_type":"MESSAGE","record_subtype":"CONN_SYNI","record_num":1,"record_size":92,"expand_num":0,"expand_size":0,"msg_uuid":"3b92dd283ffeea4cc4dad1637664999383661cc1a97f190f32521f723d877285"},"RECORD":[{"uuid":"89e7303aee54fa6ae35b3c104c9495d9a5719839bf34f74ede4d9ed1edb78e1d","server_name":"ca_center","service":"trust_server","server_addr":"","flags":0,"nonce":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}],"EXPAND" :[]}
+
+************************************************************
+{ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"ek_get","receiver_uuid":"ca_center","route":"ekpub_send","flow":"DELIVER","state":"DELIVER","flag":"NULL","ljump":1,"rjump":1,"record_type":"TCM_KEY_DESC","record_subtype":"EK_DESC","record_num":1,"record_size":0,"expand_num":1,"expand_size":0,"msg_uuid":"0b63be246e87bf5c4701385d37f9397f1d96b30414c88194c0c57e2f954c384e"},"RECORD":[{"uuid":"e2aa9ff712c919313afef513481b5188567806f1db529e2a2b706dd3012de3dd","node_uuid":"89e7303aee54fa6ae35b3c104c9495d9a5719839bf34f74ede4d9ed1edb78e1d","node_name":"royan-virtual-machine"}],"EXPAND" :[{"data_size":0,"type":"MESSAGE","subtype":"SIZED_BINDATA","expand":{"size":84,"bindata":"AAAACwACAAQAAAAEAAABAAAAAEBwH31fNiLQ7ZJoksfYLx+9BrwCFsdDfEfLcO0O4svvuf1bjRTJuqGnV9u1EEqYPQM2ZM5/2YmHIhqIi15HecI/"}}]}
+
+************************************************************

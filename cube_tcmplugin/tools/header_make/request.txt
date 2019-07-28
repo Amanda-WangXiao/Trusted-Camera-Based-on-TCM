@@ -1,0 +1,17 @@
+{
+	"type":"MESSAGE",
+	"subtype":"TYPES",
+	"mode":"INT"
+}
+{
+	"type":"VTCM_IN_CAP",
+	"subtype":0
+}
+{
+	"type":"VTCM_IN_KEY",
+	"subtype":0
+}
+{
+	"type":"VTCM_IDENTITY",
+	"subtype":0
+}

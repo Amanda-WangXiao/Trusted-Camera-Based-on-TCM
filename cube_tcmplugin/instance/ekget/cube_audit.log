@@ -1,0 +1,76 @@
+time: 0.0 :read 2 elem from file /home/royan/cube-1.3/proc/main/base_define/namelist.json!
+
+time: 0.000264 :read 4 elem from file /home/royan/cube-1.3/proc/main/base_define/dispatchnamelist.json!
+
+time: 0.000762 :read 1 elem from file /home/royan/cube-1.3/proc/main/base_define/typelist.json!
+
+time: 0.001753 :read 7 elem from file /home/royan/cube-1.3/proc/main/base_define/subtypelist.json!
+
+time: 0.002300 :read 1 elem from file /home/royan/cube-1.3/proc/main/base_define/baseflag.json!
+
+time: 0.003307 :read 3 elem from file /home/royan/cube-1.3/proc/main/base_define/memdb.json!
+
+time: 0.005068 :read 7 elem from file /home/royan/cube-1.3/proc/main/base_define/msghead.json!
+
+time: 0.006061 :read 2 elem from file /home/royan/cube-1.3/proc/main/base_define/msgrecord.json!
+
+time: 0.007079 :read 3 elem from file /home/royan/cube-1.3/proc/main/base_define/expandrecord.json!
+
+time: 0.012621 :read 10 elem from file /home/royan/cube-1.3/proc/main/base_define/base_msg.json!
+
+time: 0.013861 :read 3 elem from file /home/royan/cube-1.3/proc/main/base_define/dispatchrecord.json!
+
+time: 0.014563 :read 2 elem from file /home/royan/cube-1.3/proc/main/base_define/exmoduledefine.json!
+
+time: 0.015231 :read 1 elem from file /home/royan/cube-1.3/proc/main/base_define/sys_conn.json!
+
+time: 0.018993 :read 5 elem from file tcm_value.json!
+
+time: 0.037203 :read 49 elem from file tcm_general_define.json!
+
+time: 0.069576 :read 107 elem from file tcm_input_define.json!
+
+time: 0.071678 :read 4 elem from file tcm_manage.json!
+
+time: 0.075429 :read 11 elem from file tcm_keydesc.json!
+
+time: 0.082662 :this machine's local uuid is 89e7303aee54fa6ae35b3c104c9495d9a5719839bf34f74ede4d9ed1edb78e1d
+
+time: 0.084159 :read 1 connector!
+
+time: 0.084879 :read 1 policy succeed!
+time: 0.085719 :prepare the router proc
+
+time: 0.094982 :prepare the conn proc
+
+time: 0.095650 :monitor ex_modulec router_proc started successfully!
+
+time: 0.096131 :monitor ex_modulec ek_get started successfully!
+
+time: 0.096599 :monitor ex_modulec ek_store started successfully!
+
+time: 0.097062 :monitor ex_modulec msgtype_get started successfully!
+
+time: 0.097509 :monitor ex_modulec recordlib started successfully!
+
+time: 0.097989 :read 0 lib files!
+
+time: 0.100833 :proc conn client receive 272 data!
+
+time: 0.101820 :send 335 data to conn pik_client!
+
+time: 0.101837 :client pik_client send 335 ack data to server !
+
+time: 0.102264 :router get proc connector_proc's message 
+time: 0.102360 :discard message: message 28dd923b type MESSAGE CONN_SYNI to 
+time: 1.098943 :write 42 data!
+
+time: 2.286230 :read 126 data!
+
+time: 2.286562 :router get proc ek_get's message 
+time: 2.286677 :normal message prepare to send: message 24be630b type TCM_KEY_DESC EK_DESC to ca_center
+time: 2.286689 :send message to conn process!
+time: 2.286795 :send 376 data to conn pik_client!
+
+time: 2.286807 :send (13056  1)message 376 to conn pik_client!
+

@@ -1,0 +1,127 @@
+{
+	"head":
+	{
+		"name":"dtype_tcm_pikdesc",
+		"type":"TYPELIST"
+	},
+	"record":
+	{
+		"elem_no":1,
+		"elemlist":
+		[
+			"TCM_PIK_DESC=0x3320",
+		]
+	}
+}
+{
+	"head":
+	{
+		"name":"subtype_tcm_pik_desc",
+		"type":"SUBTYPELIST"
+	},
+	"record":
+	{
+		"type":"TCM_PIK_DESC",
+		"elem_no":6,
+		"elemlist":
+		[
+			"USERINFO=0x01",
+			"CADATA",
+			"VERIFYDATA",
+			"PIKCERT",
+			"PCRQUOTE",
+			"KEYCERTIFY"
+		]
+	}
+}
+{
+	"head":
+	{
+		"name":"tcm_pik_desc_userinfo",
+		"type":"RECORDTYPE"
+	},
+	"record":
+	{
+		"type":"TCM_PIK_DESC",
+		"subtype":"USERINFO",
+		"struct_desc":
+		{
+			"elem_desc":
+			[
+				{"name":"username","type":"STRING","size":32},
+				{"name":"user_role","type":"STRING","size":32},
+				{"name":"node_uuid","type":"UUID"},
+				{"name":"node_name","type":"STRING","size":32},
+				{"name":"describe","type":"ESTRING","size":512}
+			]
+		}
+	}
+}
+{
+	"head":
+	{
+		"name":"tcm_pik_desc_cadata",
+		"type":"RECORDTYPE"
+	},
+	"record":
+	{
+		"type":"TCM_PIK_DESC",
+		"subtype":"CADATA",
+		"struct_desc":
+		{
+			"elem_desc":
+			[
+				{"name":"userinfo_uuid","type":"UUID"},
+				{"name":"pikpub_uuid","type":"UUID"},
+				{"name":"certlen","type":"INT"},
+				{"name":"cert","type":"DEFINE","def":"certlen"},
+				{"name":"symmkey_len","type":"INT"},
+				{"name":"symmkey","type":"DEFINE","def":"symmkey_len"}
+			]
+		}
+	}
+}
+{
+    "head":
+    {
+        "name":"tcm_pik_desc_verifydata",
+        "type":"RECORDTYPE"
+    },
+    "record":
+    {
+        "type":"TCM_PIK_DESC",
+        "subtype":"VERIFYDATA",
+        "struct_desc":
+        {
+            "elem_desc":
+            [
+                {"name":"payload","type":"UCHAR"},
+                {"name":"userDigest","type":"BINDATA","size":"32"},
+                {"name":"pubDigest","type":"BINDATA","size":"32"},
+                {"name":"signLen","type":"INT"},
+                {"name":"signData","type":"DEFINE","def":"signLen"}
+            ]
+        }
+    }
+}
+{
+	"head":
+	{
+		"name":"tcm_pik_desc_pikcert",
+		"type":"RECORDTYPE"
+	},
+	"record":
+	{
+		"type":"TCM_PIK_DESC",
+		"subtype":"PIKCERT",
+		"struct_desc":
+		{
+			"elem_desc":
+			[
+				{"name":"userinfo","type":"SUBSTRUCT","ref_name":"tcm_pik_desc_userinfo"},
+				{"name":"pikpub","type":"SUBSTRUCT","ref_name":"tcm_key_pubkey"},
+				{"name":"verifydata","type":"SUBSTRUCT","ref_name":"tcm_pik_desc_verifydata"}
+			]
+		}
+	}
+}

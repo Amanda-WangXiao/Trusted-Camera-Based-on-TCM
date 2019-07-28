@@ -1,0 +1,9 @@
+{
+	"type":"LOGIN_TEST",
+	"subtype":"LOGIN",
+	"mode":"INT"
+}
+{
+	"user_name":"teacher",
+	"passwd":"123456",
+}

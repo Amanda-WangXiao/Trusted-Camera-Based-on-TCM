@@ -1,0 +1,163 @@
+time: 0.0 :read 2 elem from file /home/royan/cube-1.3/proc/main/base_define/namelist.json!
+
+time: 0.000370 :read 4 elem from file /home/royan/cube-1.3/proc/main/base_define/dispatchnamelist.json!
+
+time: 0.000504 :read 1 elem from file /home/royan/cube-1.3/proc/main/base_define/typelist.json!
+
+time: 0.001083 :read 7 elem from file /home/royan/cube-1.3/proc/main/base_define/subtypelist.json!
+
+time: 0.001175 :read 1 elem from file /home/royan/cube-1.3/proc/main/base_define/baseflag.json!
+
+time: 0.001878 :read 3 elem from file /home/royan/cube-1.3/proc/main/base_define/memdb.json!
+
+time: 0.003153 :read 7 elem from file /home/royan/cube-1.3/proc/main/base_define/msghead.json!
+
+time: 0.003831 :read 2 elem from file /home/royan/cube-1.3/proc/main/base_define/msgrecord.json!
+
+time: 0.004431 :read 3 elem from file /home/royan/cube-1.3/proc/main/base_define/expandrecord.json!
+
+time: 0.005926 :read 10 elem from file /home/royan/cube-1.3/proc/main/base_define/base_msg.json!
+
+time: 0.006581 :read 3 elem from file /home/royan/cube-1.3/proc/main/base_define/dispatchrecord.json!
+
+time: 0.006966 :read 2 elem from file /home/royan/cube-1.3/proc/main/base_define/exmoduledefine.json!
+
+time: 0.007307 :read 1 elem from file /home/royan/cube-1.3/proc/main/base_define/sys_conn.json!
+
+time: 0.015011 :read 5 elem from file tcm_value.json!
+
+time: 0.024726 :read 49 elem from file tcm_general_define.json!
+
+time: 0.067027 :read 107 elem from file tcm_input_define.json!
+
+time: 0.069006 :read 4 elem from file tcm_manage.json!
+
+time: 0.071864 :read 11 elem from file tcm_keydesc.json!
+
+time: 0.073440 :read 6 elem from file tcm_pikdesc.json!
+
+time: 0.080767 :this machine's local uuid is 89e7303aee54fa6ae35b3c104c9495d9a5719839bf34f74ede4d9ed1edb78e1d
+
+time: 0.081322 :read 2 connector!
+
+time: 0.081739 :read 6 policy succeed!
+time: 0.081783 :prepare the router proc
+
+time: 0.095128 :prepare the conn proc
+
+time: 0.095219 :monitor ex_modulec router_proc started successfully!
+
+time: 0.095249 :start ex_module msg_send started successfully!
+
+time: 0.095273 :monitor ex_modulec pik_client started successfully!
+
+time: 0.095299 :monitor ex_modulec pikcert_verify started successfully!
+
+time: 0.095330 :monitor ex_modulec msgtype_get started successfully!
+
+time: 0.095366 :monitor ex_modulec pikcert_store started successfully!
+
+time: 0.095390 :monitor ex_modulec localkey_gen started successfully!
+
+time: 0.095413 :monitor ex_modulec recordlib started successfully!
+
+time: 0.095435 :monitor ex_modulec create_key started successfully!
+
+time: 0.095458 :monitor ex_modulec remotekey_gen started successfully!
+
+time: 0.095637 :read 0 lib files!
+
+time: 0.095657 :begin msgfile_send module!
+
+time: 0.096540 :router get proc msg_send's message 
+time: 0.096641 :normal message prepare to send: message 69a18ef2 type TCM_PIK_DESC USERINFO to pik_client
+time: 0.098744 :write 80 data!
+
+time: 0.098933 :proc conn client receive 272 data!
+
+time: 0.099394 :send 339 data to conn pik_client!
+
+time: 0.099404 :client pik_client send 339 ack data to server !
+
+time: 0.099625 :router get proc connector_proc's message 
+time: 0.099689 :discard message: message 8bcd7bf3 type MESSAGE CONN_SYNI to 
+time: 0.100668 :read 82 data!
+
+time: 0.102587 :write 80 data!
+
+time: 0.111045 :read 82 data!
+
+time: 0.114120 :write 185 data!
+
+time: 0.114197 :proc conn client receive 275 data!
+
+time: 0.116160 :send 342 data to conn pik_sender!
+
+time: 0.116181 :client pik_sender send 342 ack data to server !
+
+time: 0.116508 :router get proc connector_proc's message 
+time: 0.116579 :discard message: message 440b0384 type MESSAGE CONN_SYNI to 
+time: 1.215506 :read 405 data!
+
+time: 1.215850 :write 46 data!
+
+time: 1.225221 :read 10 data!
+
+time: 1.225429 :write 46 data!
+
+time: 1.235569 :read 10 data!
+
+time: 1.236429 :router get proc pik_client's message 
+time: 1.236767 :normal message prepare to send: message 69a18ef2 type TCM_PIK_DESC USERINFO to ca_center
+time: 1.236775 :send message to conn process!
+time: 1.236978 :send 533 data to conn pik_client!
+
+time: 1.236991 :send (13088  1)message 533 to conn pik_client!
+
+time: 1.546610 :proc conn client receive 549 data!
+
+time: 1.546764 :router get proc connector_proc's message 
+time: 1.546850 :normal message prepare to send: message 69a18ef2 type TCM_PIK_DESC CADATA to pik_client
+time: 1.547199 :write 80 data!
+
+time: 1.549266 :read 82 data!
+
+time: 1.549690 :write 313 data!
+
+time: 1.553044 :read 46 data!
+
+time: 1.553221 :write 46 data!
+
+time: 1.557652 :read 10 data!
+
+time: 1.558615 :write 80 data!
+
+time: 1.567505 :read 82 data!
+
+time: 1.567756 :write 80 data!
+
+time: 1.575411 :read 82 data!
+
+time: 1.575808 :write 243 data!
+
+time: 1.650282 :read 98 data!
+
+time: 1.650588 :write 46 data!
+
+time: 1.658249 :read 10 data!
+
+time: 1.658433 :write 46 data!
+
+time: 1.672138 :read 10 data!
+
+time: 1.672300 :write 14 data!
+
+time: 1.676610 :read 10 data!
+
+time: 1.678106 :router get proc pik_client's message 
+time: 1.678226 :normal message prepare to send: message 69a18ef2 type TCM_PIK_DESC PIKCERT to pik_receiver
+time: 1.678234 :send message to conn process!
+time: 1.678340 :send 574 data to conn pik_sender!
+
+time: 1.678349 :send (13088  4)message 574 to conn pik_sender!
+
