@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>注册</title>
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <div class="container jumbotron">
+    <h2>注册</h2>
+    <div class="form-group">
+      <label for="inputServer">服务器地址</label>
+      <input class="form-control" id="inputServer">
+    </div>
+    <div class="form-group">
+      <label for="inputPort">端口号</label>
+      <input class="form-control" id="inputPort">
+    </div>
+    <button class="btn btn-primary" onclick="mywebsockinit()">连接服务器</button>
+    <div class="form-group">
+      <label for="inputUsername">用户名</label>
+      <input class="form-control" id="inputUsername">
+    </div>
+    <div class="form-group">
+      <label for="inputPassword">密码</label>
+      <input type="password" class="form-control" id="inputPassword">
+    </div>
+    <div class="form-group">
+      <label for="inputPasswordValidate">确认密码</label>
+      <input type="password" class="form-control" id="inputPasswordValidate">
+    </div>
+    <div class="form-group">
+      <label for="inputExtras">用户额外信息</label>
+      <input class="form-control" id="inputExtras">
+    </div>
+    <button class="btn btn-primary" onclick="register()">注册</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/master.js"></script>
+  <script src="js/message.js"></script>
+  <script src="js/registertest.js"></script>
+</body>
+
+</html>
