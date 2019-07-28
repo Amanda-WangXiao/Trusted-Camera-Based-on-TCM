@@ -1,0 +1,51 @@
+{
+	"head":
+	{
+		"name":"module_type",
+		"type":"NAMELIST"
+	},
+	"record":
+	{
+		"elem_no":8,
+		"elemlist":
+		[
+			"MAIN=0x01",
+			"CONN",
+			"ROUTER",
+			"PORT",
+			"MONITOR",
+			"DECIDE",
+			"CONTROL",
+			"START",
+			"TRANSLATER"
+		]
+	}
+}
+{
+	"head":
+	{
+		"name":"exmodule_lib_para",
+		"type":"RECORDTYPE"
+	},
+	"record":
+	{
+		"type":"EXMODULE",
+		"subtype":"LIB_PARA",
+		"struct_desc":
+		{
+			"elem_desc":
+			[
+				{"name":"libname","type":"ESTRING"},
+				{"name":"type","type":"ENUM","ref_name":"module_type"},
+				{"name":"dynamic_lib","type":"ESTRING"},
+				{"name":"init","type":"ESTRING"},
+				{"name":"start","type":"ESTRING"}
+			]
+		},
+		"index":
+		{
+			"flag":"INDEX",
+			"elemlist":"libname,type,dynamic_lib,init,start"
+		}
+	}	
+}
