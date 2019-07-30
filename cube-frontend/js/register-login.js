@@ -1,12 +1,5 @@
 var isconnected = false;
-
-var input = document.getElementById("plain");
-var passwd = document.getElementById("cipher");
 var wsock;
-
-var plainmsg = { "head": "", "record": "", "expand": "" };
-plainmsg["head"] = { "tag": "MESG", "version": 65537 };
-var jsonstr = JSON.stringify(plainmsg);
 
 function mywebsockinit() {
   if (isconnected) {
