@@ -50,7 +50,7 @@ function register() {
   } else if (password != passwordValidate) {
     alert("请输入相同的密码");
   } else {
-    let register_info = `register ${username} ${password} ${extras}`;
+    let register_info = { message: `register ${username} ${password} ${extras}` };
 
     if (!isconnected) {
       alert("连接未建立！")
@@ -59,7 +59,6 @@ function register() {
 
     var msg = new Cube_msg("LOGIN_TEST", "REGISTER");
     msg.addrecord(register_info);
-    console.log(msg.output());
     wsock.send(msg.output())
   }
 }
@@ -70,11 +69,7 @@ function login() {
   if (username == "" || password == "") {
     alert("请输入用户名和密码");
   } else {
-    let login_info = {
-      user: username,
-      passwd: password
-    };
-    console.log(login_info);
+    let login_info = { message: `login ${username} ${password}` };
 
     if (!isconnected) {
       alert("连接未建立！")
