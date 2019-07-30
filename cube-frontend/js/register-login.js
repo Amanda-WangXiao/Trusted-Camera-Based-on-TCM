@@ -26,8 +26,10 @@ function mywebsockinit() {
     return;
   };
   wsock.onclose = function (e) {
+    alert("Closed.");
   };
   wsock.onerror = function (e) {
+    alert("Error");
   };
   wsock.onmessage = function (e) {
     var msg;
@@ -35,6 +37,34 @@ function mywebsockinit() {
     if (msg.replace(/(^s*)|(s*$)/g, "").length != 0) {
       alert(msg)
     }
+  }
+}
+
+function register() {
+  let username = document.getElementById("inputUsername").value;
+  let password = document.getElementById("inputPassword").value;
+  let passwordValidate = document.getElementById("inputPasswordValidate").value;
+  let extras = document.getElementById("inputExtras").value;
+  if (username == "" || password == "" || passwordValidate == "") {
+    alert("请输入用户名和密码");
+  } else if (password != passwordValidate) {
+    alert("请输入相同的密码");
+  } else {
+    let register_info = {
+      user: username,
+      passwd: password,
+      user_info: extras
+    };
+    console.log(register_info);
+
+    if (!isconnected) {
+      alert("连接未建立！")
+      return;
+    }
+
+    var msg = new Cube_msg("LOGIN_TEST", "REGISTER");
+    msg.addrecord(register_info);
+    wsock.send(msg.output())
   }
 }
 
