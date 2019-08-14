@@ -1,6 +1,7 @@
 # Trusted-Camera-Based-on-TCM
 A Project for National Information Security Competition for College Students.  
 This work is developed and perfected by both teachers and students. Applying some achievements of Beijing Key Laboratory of Trusted Computing,Beijing University of Technology.The users who concerned about this project should follow the LGPL protocol.  
+  
 这是一个全国大学生信息安全竞赛的参赛项目。  
 本作品由师生共同开发、完善。应用了北京工业大学可信计算重点实验室的一些成果，关注本项目的使用者应当遵循LGPL协议。  
   
@@ -15,6 +16,7 @@ At present, trusted computing technology has not been applied in the Internet of
   
 # NOTE  
 The basic framework on which the work relies: Trusted Frame【cube-1.3.zip】, TCM simulator【cube-tcm-master.zip】and white list related package 【cube-whitelist.tgz】, must be decompressed under Linux system. If you decompress these packages in other systems firstly and then move these to Linux, there may be linking errors.  
+  
 作品所依赖的基本框架：可信框架【cube-1.3.zip】、TCM模拟器【cube tcm master.zip】和白名单相关包【cube white list.tgz】，必须在Linux系统下解压缩。如果您先在其他系统中解压缩这些包，然后将它们移到Linux，可能会出现链接错误。  
 
 # Environment  
@@ -25,6 +27,7 @@ This work won the second prize in the National College Student Information Secur
 Thanks to many teachers in the Key Laboratory of Trusted Computing, Beijing University of Technology for their help.  
 Especially, our teacher Hu Jun provides us with many useful developing tools. Mr Hu's home page is: https://github.com/biparadox.   
 Developers who are interested in trusted computing can learn from the material contributed by him.    
+  
 本作品获得了全国大学生信息安全竞赛-作品赛二等奖。  
 感谢北京工业大学可信计算重点实验室中众多老师的帮助。  
 特别地，感谢胡俊老师为我们提供了许多可信开发工具，胡老师的主页是：https://github.com/biparadox  
