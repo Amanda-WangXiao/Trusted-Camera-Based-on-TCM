@@ -21,6 +21,11 @@ The basic framework on which the work relies: Trusted Frame【cube-1.3.zip】, T
 Ubuntu 18.04.1  
   
 # Acknowledgements  
-
-
+This work won the second prize in the National College Student Information Security Competition.  
+Thanks to many teachers in the Key Laboratory of Trusted Computing, Beijing University of Technology for their help.  
+Especially, our teacher Hu Jun provides us with many useful developing tools. Mr Hu's home page is: https://github.com/biparadox. Developers who are interested in trusted computing can learn from the material contributed by him.  
+本作品获得了全国大学生信息安全竞赛-作品赛二等奖。  
+感谢北京工业大学可信计算重点实验室中众多老师的帮助。  
+特别地，感谢胡俊老师为我们提供了许多可信开发工具，胡老师的主页是：https://github.com/biparadox  
+有对可信计算感兴趣的开发者可以去学习胡老师贡献的材料。  
 
