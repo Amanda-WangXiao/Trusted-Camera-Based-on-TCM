@@ -20,7 +20,7 @@ The basic framework on which the work relies: Trusted Frame【cube-1.3.zip】, T
 作品所依赖的基本框架：可信框架【cube-1.3.zip】、TCM模拟器【cube tcm master.zip】和白名单相关包【cube white list.tgz】，必须在Linux系统下解压缩。如果您先在其他系统中解压缩这些包，然后将它们移到Linux，可能会出现链接错误。  
 
 # Environment  
-Ubuntu 18.04.1  
+Ubuntu 18.0 or higher.  
   
 # Acknowledgements  
 This work won the second prize in the National College Student Information Security Competition.  
