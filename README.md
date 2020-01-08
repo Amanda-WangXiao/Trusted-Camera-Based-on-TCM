@@ -23,7 +23,7 @@ The basic framework on which the work relies: Trusted Frame【cube-1.3.zip】, T
 Ubuntu 18.0 or higher  
   
 # Acknowledgements  
-This work won the second prize in the National College Student Information Security Competition.  
+This work won the second prize of National Information Security Competition for College Students.  
 Thanks to many teachers in the Key Laboratory of Trusted Computing, Beijing University of Technology for their help.  
 Especially, our teacher Hu Jun provides us with many useful developing tools. Mr Hu's home page is: https://github.com/biparadox.   
 Developers who are interested in trusted computing can learn from the material contributed by him.    
