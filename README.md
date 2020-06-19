@@ -1,4 +1,4 @@
-# Trusted-Camera-Based-on-TCM
+# Trusted Camera Based on TCM
 A Project for National Information Security Competition for College Students.  
 This work is developed and perfected by both teachers and students. Applying some achievements of Beijing Key Laboratory of Trusted Computing,Beijing University of Technology.The users who concerned about this project should follow the LGPL protocol.  
   
